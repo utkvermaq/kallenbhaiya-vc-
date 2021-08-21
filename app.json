@@ -1,0 +1,39 @@
+{
+  "name": "❦︎𝗗𝗮𝘆𝗻𝗮𝗺𝗶𝗰  𝖝 𝗠𝘂𝘀𝗶𝗰 𝗕𝗼𝘁",
+  "description": "Dekho bhai mai bas gane bajata hu samjh gya na hue hue.",
+  "logo": "https://www.wallpapertip.com/wmimgs/8-88557_romantic-anime-boy-and-girl.jpg",
+  "keywords": ["music", "voicechat", "telegram"],
+  "repository": "https://github.com/Bluehatcoders",
+  "stack": "container",
+  "env": {
+    "SESSION_NAME": {
+      "description": "Pyrogram session string"
+    },
+    "BOT_TOKEN": {
+      "description": "A bot token from @BotFather"
+    },
+    "START_IMG": {
+      "description": "Telegraph Link Of An Image",
+      "required": false
+    },
+    "API_ID": {
+      "description": "App ID from my.telegram.org/apps"
+    },
+    "API_HASH": {
+      "description": "App hash from my.telegram.org/apps"
+    },
+    "SUDO_USERS": {
+      "description": "List of user IDs counted as admin everywhere (separated by space)."
+    },
+    "ARQ_API_KEY": {
+      "description": "Get It From @ArqRoBot (nhi aaye to mujhe bol dena bro mai bna ke de dunga"
+    },
+    "BOT_USERNAME": {
+      "description": "Your Bot's Username Without @."
+    },
+    "DURATION_LIMIT": {
+      "description": "Max audio duration limit for downloads (minutes).",
+      "value": "10"
+    }
+  }
+}
