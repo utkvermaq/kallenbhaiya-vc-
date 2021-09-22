@@ -427,7 +427,7 @@ async def play(_, message: Message):
 
                           try:
                               await USER.join_chat(invitelink)
-                              await USER.send_message(message.chat.id,"Mai yha gane bajane aaya hu Hue hue")
+                              await USER.send_message(message.chat.id,"gana bajata hu lekin suno mai galli deta hu agar bina galli wala bot chaiyee iss add karo @dynamicxmusic2bot")
                               await lel.edit(
                                   "<b>Mera bot aagya abhi maja aayega na bidu</b>",
                               )
