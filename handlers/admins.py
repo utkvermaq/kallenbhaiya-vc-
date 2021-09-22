@@ -35,7 +35,7 @@ async def pause(_, message: Message):
     ) or (
             callsmusic.pytgcalls.active_calls[message.chat.id] == 'paused'
     ):
-        await message.reply_text("❗ Mujhe nhi lagta ki koi gana baj rha hai")
+        await message.reply_text("❗ kuch nhi chal raha hai bsdl")
     else:
         callsmusic.pytgcalls.pause_stream(message.chat.id)
         await message.reply_text("▶️ Pause kar diya!")
@@ -50,10 +50,10 @@ async def resume(_, message: Message):
     ) or (
             callsmusic.pytgcalls.active_calls[message.chat.id] == 'playing'
     ):
-        await message.reply_text("❗ Mujhe nhi lagta ki kuch pause hai!")
+        await message.reply_text("❗ kuch nhi chal raha hai bsdk")
     else:
         callsmusic.pytgcalls.resume_stream(message.chat.id)
-        await message.reply_text("⏸ Resume kar diya!")
+        await message.reply_text("⏸ chula kar diya bsdk")
 
 
 @Client.on_message(command("end") & other_filters)
@@ -61,7 +61,7 @@ async def resume(_, message: Message):
 @authorized_users_only
 async def stop(_, message: Message):
     if message.chat.id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❗ Mujhe nhi lagta ki kuch stream ho rha hai!")
+        await message.reply_text("❗ bsdk kuch chal raha hai")
     else:
         try:
             queues.clear(message.chat.id)
@@ -69,7 +69,7 @@ async def stop(_, message: Message):
             pass
 
         callsmusic.pytgcalls.leave_group_call(message.chat.id)
-        await message.reply_text("❌ Streamming hi band kar diya Hue hue!")
+        await message.reply_text("❌ band kar diya be")
 
 
 @Client.on_message(command("skip") & other_filters)
