@@ -4,13 +4,13 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from config import BOT_USERNAME
 
 
-@Client.on_message(filters.command(["start", "start@itsKaleenBhaiyabot"]) & filters.private & ~filters.channel)
+@Client.on_message(filters.command(["start", "start@itsKaleeenBhaiyabot"]) & filters.private & ~filters.channel)
 async def start(_, message: Message):
     await message.reply_text(
         text="**Hei 👋🏻 {}!**\n\nDekh bhai **mai koi devta nhi hu mai bas VC me songs bja sakta hu** Ha lekin kuch features hai **jisse mai aapko Amaze kar sakta hu hue hue!**\n\n**Click /cmdlist For More Help or contact @iamsatyanchal / @SHubHam_XD / @utkarshisop / @dogekapila *".format(message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(
             [[
-            InlineKeyboardButton("➕ Add To Your Group ➕", url="http://t.me/itsKaleenBhaiyabot?startgroup=true")
+            InlineKeyboardButton("➕ Add To Your Group ➕", url="http://t.me/itsKaleeenBhaiyabot?startgroup=true")
             ],[
             InlineKeyboardButton("💬 Group", url="https://t.me/heavydriverhaiham"),
             InlineKeyboardButton("🤖 Contact Owner", url="https://t.me/@PROLABS_127_0_0_1")
@@ -21,7 +21,7 @@ async def start(_, message: Message):
         disable_web_page_preview=True
     )
         
-@Client.on_message(filters.command(["start", "start@itsKaleenBhaiyabot"]) & ~filters.private & ~filters.channel)
+@Client.on_message(filters.command(["start", "start@itsKaleeenBhaiyabot"]) & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
     await message.reply_text(
         text="**Mai jinda hu itni jaldi thori marunga season 3 aaya ni hai :(**",
@@ -33,7 +33,7 @@ async def gstart(_, message: Message):
     )
 
 
-@Client.on_message(filters.command(["cmdlist", "start@itsKaleenBhaiyabot"]) & filters.private & ~filters.channel)
+@Client.on_message(filters.command(["cmdlist", "start@itsKaleeenBhaiyabot"]) & filters.private & ~filters.channel)
 async def cmdlist(_, message: Message):
     await message.reply_text(
         text="""**कालीन भैया (Kaleen Bhaiya): Aapki seva me**
