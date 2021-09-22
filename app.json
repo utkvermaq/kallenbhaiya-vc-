@@ -3,7 +3,7 @@
   "description": "Dekho bhai mai bas gane bajata hu samjh gya na hue hue.",
   "logo": "https://www.wallpapertip.com/wmimgs/8-88557_romantic-anime-boy-and-girl.jpg",
   "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/Bluehatcoders",
+  "repository": "https://github.com/utkvermaq",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
