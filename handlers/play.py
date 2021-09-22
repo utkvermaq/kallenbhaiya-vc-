@@ -478,7 +478,7 @@ async def play(_, message: Message):
         views = results[0]["views"]
 
     except Exception as e:
-        await lel.edit("Abe kaun si duniya ka gana de diya be mila hi. #sedlyf shi bta teri koi Gf/bf nhi hai na mujhe doubt ho rha hai")
+        await lel.edit("nhi mila song be")
         print(str(e))
         return
 
