@@ -31,7 +31,7 @@ def song(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply('Rukja jadu se tere song ko dhudh rha hu (Hue hue)')
+    m = message.reply('Ruko jara sabar karo be')
     ydl_opts = {"format": "bestaudio/best"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -50,17 +50,17 @@ def song(client, message):
 
     except Exception as e:
         m.edit(
-            "Abe kaun si duniya ka gana diya hai be youtube devta ke pass bhi nhi mila"
+            "na mila be kay diye the"
         )
         print(str(e))
         return
-    m.edit("Jadu mantar mai karu song ka hogya download shuru")
+    m.edit("ruko bajata hu")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = '**🎵 Uploaded by @GroupMusicPlayBot **'
+        rep = 'youtube se le aya'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
